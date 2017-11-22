@@ -33,7 +33,7 @@ module_stock() {
   find $objdir -name '*.ko' -exec cp -av {} $anykernel/modules/ \;
   # strip modules
  ${TOOL_CHAIN_PATH}/${CROSS_COMPILE}strip --strip-unneeded $anykernel/modules/*
-  cp -rf $objdir/arch/${ARCH}/boot/Image.gz-dtb $anykernel/zImage
+  cp -rf $objdir/arch/${ARCH}/boot/zImage $anykernel/zImage
 }
 
 module_cm() {
@@ -42,7 +42,7 @@ module_cm() {
   find $objdir -name '*.ko' -exec cp -av {} $anykernel/modules/ \;
   # strip modules
  ${TOOL_CHAIN_PATH}/${CROSS_COMPILE}strip --strip-unneeded $anykernel/modules/*
-  cp -rf $objdir/arch/${ARCH}/boot/Image.gz-dtb $anykernel/zImage
+  cp -rf $objdir/arch/${ARCH}/boot/zImage $anykernel/zImage
 }
 
 delete_zip() {
