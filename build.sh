@@ -60,7 +60,7 @@ make_name() {
 }
 export_it() {
   rm zImage
-  mv $zip_name $releases_folder
+  mv $zip_name $release_folder
 }
 
 turn_back() {
