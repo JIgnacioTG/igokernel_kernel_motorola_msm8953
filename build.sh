@@ -1,14 +1,14 @@
 #!/bin/bash
 kernel_version=${1}
 kernel_name="DuskKernel"
-device_name="addison"
+device_name="albus"
 zip_name="$kernel_name-$device_name-$kernel_version.zip"
 
-export CONFIG_FILE="dusk_defconfig"
+export CONFIG_FILE="albus_defconfig"
 export ARCH="arm"
 export CROSS_COMPILE="arm-eabi-"
-export KBUILD_BUILD_USER="KuroIgunashio"
-export KBUILD_BUILD_HOST="DuskKernel"
+export KBUILD_BUILD_USER="iGNA-Ci-O"
+export KBUILD_BUILD_HOST="iGoKernel"
 export TOOL_CHAIN_PATH="${HOME}/github/toolchains/arm-eabi-4.8/bin"
 export CONFIG_ABS_PATH="arch/${ARCH}/configs/${CONFIG_FILE}"
 export PATH=$PATH:${TOOL_CHAIN_PATH}
