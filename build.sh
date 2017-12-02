@@ -1,20 +1,20 @@
 #!/bin/bash
 kernel_version=${1}
-kernel_name="DuskKernel"
+kernel_name="iGoKernel"
 device_name="albus"
 zip_name="$kernel_name-$device_name-$kernel_version.zip"
 
 export CONFIG_FILE="albus_defconfig"
 export ARCH="arm"
 export CROSS_COMPILE="arm-eabi-"
-export KBUILD_BUILD_USER="iGNA-Ci-O"
+export KBUILD_BUILD_USER="iGNa-Ci-O"
 export KBUILD_BUILD_HOST="iGoKernel"
 export TOOL_CHAIN_PATH="${HOME}/github/toolchains/arm-eabi-4.8/bin"
 export CONFIG_ABS_PATH="arch/${ARCH}/configs/${CONFIG_FILE}"
 export PATH=$PATH:${TOOL_CHAIN_PATH}
-export objdir="${HOME}/github/DuskKernel/StockRom-7.1/obj"
-export sourcedir="${HOME}/github/DuskKernel/StockRom-7.1"
-export anykernel="${HOME}/github/DuskKernel/StockRom-7.1/anykernel"
+export objdir="${HOME}/github/iGoKernel/StockRom-7.1/obj"
+export sourcedir="${HOME}/github/iGoKernel/StockRom-7.1"
+export anykernel="${HOME}/github/iGoKernel/StockRom-7.1/anykernel"
 release_folder="${HOME}/releases"
 
 compile() {
